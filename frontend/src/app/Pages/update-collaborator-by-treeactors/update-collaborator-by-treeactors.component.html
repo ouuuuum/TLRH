@@ -1,0 +1,60 @@
+<p>update-collaborator-by-treeactors works!</p>
+
+
+<div class="container-fluid">
+  <div class="card">
+    <div class="card-body" style=" max-height: 200px;">
+      <h5 class="card-title fw-semibold mb-4">La liste des Collaborateurs</h5>
+      <p class="mb-0">Visualiser les Collaborateurs existants</p>
+    </div>
+  </div>
+</div>
+<!-- Insert your old code here -->
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+        <tr>
+          <th>Poste APP</th>
+          <th>Salaire Actuel</th>
+          <th>Manager RH</th>
+
+        </tr>
+        </thead>
+        <tbody>
+
+        <h3> Update Employee </h3>
+        <form (ngSubmit) = "onSubmit()">
+
+          <div class="form-group">
+            <label> First Name</label>
+            <input type="text" class ="form-control" id = "firstName"
+                   [(ngModel)] = "collaborateur.salaireActuel" name = "firstName">
+          </div>
+
+          <div class="form-group">
+            <label> Last Name</label>
+            <input type="text" class ="form-control" id = "lastName"
+                   [(ngModel)] = "collaborateur.posteAPP" name = "lastName">
+          </div>
+
+          <div class="form-group">
+            <label> Email Id</label>
+            <input type="text" class ="form-control" id = "emailId"
+                   [(ngModel)] = "collaborateur.managerRH" name = "emailId">
+          </div>
+
+          <button class = "btn btn-success" type ="submit">Submit</button>
+
+        </form>
+
+
+
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!-- End of old code -->
